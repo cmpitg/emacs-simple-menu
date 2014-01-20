@@ -63,6 +63,11 @@ To remove a menu, simply use `remove-menu`:
 
 TODO: write a blog post with short and concise explanation.
 
+TODO: write a blog post on how to make the best out of Emacs menu:
+* To discover new features
+* To group most frequently used functions
+* To create a habit/good usage pattern for better productivity
+
 ## License ##
 
 This library is published under the terms of the GNU General Public License
