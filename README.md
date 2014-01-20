@@ -48,6 +48,15 @@ Besides *menu path*, `:mode`, and `title`, we also have:
 
 * optional `:tooltip` - as it says, the menu tooltip.
 
+To remove a menu, simply use `remove-menu`:
+
+```lisp
+(remove-menu [menu-bar tags])
+
+;; Or
+(remove-menu [menu-bar tags] :mode lisp-mode-map)
+```
+
 ## Technical details ##
 
 TODO: write a blog post with short and concise explanation.
