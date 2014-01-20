@@ -24,5 +24,34 @@
 
 ;;; Code:
 
+
+;;; Draft: How it should work
+
+;; (defun set-menu-actions)
+
+;; (make-submenu   [menu-bar tags]
+;;                 :title "Tags"
+;;                 :tooltip "Tag management")
+
+;; (build-menu '([menu-bar tags] "Tags"
+;;               ([create-tags]     "Build tags")
+;;               ([view-tags]       "View tags"   "View tag in other-window")
+;;               ([find-tag]        "Find tag"    "Find a tag")))
+
+;; (build-menu-action '([menu-bar tags]
+;;                      ([create-tags] '$create-tags)
+;;                      ([view-tags]   nil)
+;;                      ([find-tag]    'find-tag)))
+
+;; (remove-menu [menu-bar tags])
+
+;; (build-menu '([menu-bar tags] "Tags"
+;;               ([create-tags]     "Build tags")
+;;               ([view-tags]       "View tags"   "View tag in other-window")
+;;               ([find-tag]        "Find tag"    "Find a tag")
+
+;;               ([deeper-tag-menu] "Deeper"
+;;                ([something] "Its title" "Its tooltip"))))
+
 (provide 'simple-menu)
 ;;; simple-menu.el ends here
