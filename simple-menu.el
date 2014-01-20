@@ -1,8 +1,8 @@
 ;;; simple-menu.el --- Simple way to build menu
 
-;; Copyright (C) 2014  cmpitg
+;; Copyright (C) 2014  Duong Nguyen
 
-;; Author: cmpitg <cmpitg@melec>
+;; Author: Duong Nguyen ([@cmpitg](https://github.com/cmpitg/))
 ;; Keywords: extensions
 
 ;; This program is free software; you can redistribute it and/or modify
