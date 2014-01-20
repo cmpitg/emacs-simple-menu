@@ -1,4 +1,6 @@
-# simple-menu - yet another simple way to build menu in Emacs #
+# simple-menu #
+
+Yet another simple way to build menu in Emacs.
 
 ## Usage ##
 
