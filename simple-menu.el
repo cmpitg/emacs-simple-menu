@@ -24,14 +24,37 @@
 
 ;;; Code:
 
+(defun* make-menu-item (path &key
+                             title
+                             action
+                             (mode global-map)
+                             tooltip
+                             (after t))
+  (if tooltip
+    (define-key-after mode path (cons title (cons tooltip action)) after)
+    (define-key-after mode path (cons title action)) after))
+
+(defun* make-submenu (path &key
+                           title
+                           (mode global-map)
+                           purpose
+                           tooltip
+                           (after t))
+  (let ((purpose (if purpose
+                   purpose
+                   (symbol-name (gensym)))))
+    (if tooltip
+      (define-key-after mode path (cons title (cons tooltip
+                                                    (make-sparse-keymap purpose)))
+        after)
+      (define-key-after mode path (cons title (make-sparse-keymap purpose))
+        after))))
+
+(defun* remove-menu (path &key (mode global-map))
+  (define-key-after mode path nil))
+
 
 ;;; Draft: How it should work
-
-;; (defun set-menu-actions)
-
-;; (make-submenu   [menu-bar tags]
-;;                 :title "Tags"
-;;                 :tooltip "Tag management")
 
 ;; (build-menu '([menu-bar tags] "Tags"
 ;;               ([create-tags]     "Build tags")
