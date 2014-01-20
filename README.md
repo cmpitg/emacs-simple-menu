@@ -41,7 +41,7 @@ To add or modify a menu item, use `make-menu-item`:
                 :tooltip "List tags with Helm")
 ```
 
-Beside *menu path*, `:mode`, and `title`, we also have:
+Besides *menu path*, `:mode`, and `title`, we also have:
 
 * `:action` - the *interactive function* that is called my the menu is
   selected
